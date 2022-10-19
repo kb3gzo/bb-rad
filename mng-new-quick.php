@@ -333,6 +333,11 @@
 		</li>
 
 		<li class='fieldset'>
+		<label for='framedipaddress' class='form'><?php echo t('all','FramedIPAddress')?></label>
+		<input name='framedipaddress' type='text' value='' tabindex=107 />
+		</li>
+		
+		<li class='fieldset'>
 		<label for='passwordType' class='form'><?php echo t('all','PasswordType')?> </label>
 		<select class='form' tabindex=102 name='passwordType' >
 			<option value='Cleartext-Password'>Cleartext-Password</option>
@@ -378,21 +383,6 @@
         </fieldset>
 
 	<br/>
-
-	<fieldset>
-
-		<h302> <?php echo t('title','Attributes'); ?> </h302>
-	<br/>
-
-		<label for='framedipaddress' class='form'><?php echo t('all','FramedIPAddress')?></label>
-		<input name='framedipaddress' type='text' value='' tabindex=107 />
-		<br/>
-
-
-		<br/>	
-	</fieldset>
-
-	
 
 </div>
 
