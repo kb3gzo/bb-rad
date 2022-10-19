@@ -312,7 +312,6 @@
 		<li class='fieldset'>
 		<label for='username' class='form'><?php echo t('all','Username')?></label>
 		<input name='username' type='text' id='username' value='' tabindex=100  />
-		echo "'".$configValues['CONFIG_USER_ALLOWEDRANDOMCHARS']."'" ?>)" />
 		<img src='images/icons/comment.png' alt='Tip' border='0' onClick="javascript:toggleShowDiv('usernameTooltip')" />
 
 		<div id='usernameTooltip'  style='display:none;visibility:visible' class='ToolTip'>
@@ -325,7 +324,6 @@
 		<label for='password' class='form'><?php echo t('all','Password')?></label>
 		<input name='password' type='text' id='password' value='' <?php if (isset($hiddenPassword)) 
 			echo $hiddenPassword ?> tabindex=101 />
-		echo "'".$configValues['CONFIG_USER_ALLOWEDRANDOMCHARS']."'" ?>)" />
 		<img src='images/icons/comment.png' alt='Tip' border='0' onClick="javascript:toggleShowDiv('passwordTooltip')" />
 
 		<div id='passwordTooltip'  style='display:none;visibility:visible' class='ToolTip'>
