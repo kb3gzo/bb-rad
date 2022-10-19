@@ -338,14 +338,6 @@
 		</li>
 		
 		<li class='fieldset'>
-		<label for='passwordType' class='form'><?php echo t('all','PasswordType')?> </label>
-		<select class='form' tabindex=102 name='passwordType' >
-			<option value='Cleartext-Password'>Cleartext-Password</option>
-			</select>
-		<br />
-		</li>
-
-		<li class='fieldset'>
 		<label for='group' class='form'><?php echo t('all','Group')?></label>
 		<?php   
 			include_once 'include/management/populate_selectbox.php';
