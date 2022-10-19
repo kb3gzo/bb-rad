@@ -53,7 +53,7 @@ include("lang/main.php");
                 <div id="header">
                     <h1>
                         <a href="index.php">
-                            <img src="images/daloradius_small.png" border="0" />
+                            <img src="images/bb_small.png" border="0" />
                         </a>
                     </h1>
                     <h2><?= t('all','copyright1') ?></h2>

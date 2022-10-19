@@ -1815,9 +1815,9 @@ if (isset($_POST['submit'])) {
 		
                 <div id="header">
 
-                                <h1><a href="index.php"> <img src="images/daloradius_small.png" border=0/></a></h1>
+                                <h1><a href="index.php"> <img src="images/bb_small.png" border=0/></a></h1>
                                 <h2>
-                                	Radius Management, Reporting and Accounting by <a href="https://github.com/lirantal/daloradius">Liran Tal</a>                                
+                                	Radius Management, Reporting and Accounting
                                 </h2>
                                 <ul id="nav">
 				<a name='top'></a>
@@ -1847,15 +1847,6 @@ if (isset($_POST['submit'])) {
 
 	</ul>
 	
-	<h3>Support</h3>
-
-	<p class="news">
-		daloRADIUS <br/>
-		RADIUS Management Platform
-		<a href="https://github.com/lirantal/daloradius" class="more">Read More &raquo;</a>
-	</p>
-
-
 
 </div>
 

@@ -5,7 +5,7 @@ echo "
 
 		<h2> daloRADIUS Web Management Server </h2>
 		<br/><br/><br/>
-		<img src='images/daloradius_logo.jpg' border=0 />
+		<img src='images/bb_logo.jpg' border=0 />
 	</center>
 ";
 
