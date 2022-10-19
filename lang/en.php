@@ -1150,7 +1150,7 @@ $l['Intro']['mngradhuntlist.php'] = "HuntGroup Listing in Database";
 $l['Intro']['mngradhuntedit.php'] = "Edit HuntGroup Record";
 $l['Intro']['mngradhuntdel.php'] = "Remove HuntGroup Record";
 
-$l['Intro']['mngradprofiles.php'] = "Packages Configuration";
+$l['Intro']['mngradprofiles.php'] = "Package Configuration";
 $l['Intro']['mngradprofilesedit.php'] = "Edit Package";
 $l['Intro']['mngradprofilesduplicate.php'] = "Duplicate Package";
 $l['Intro']['mngradprofilesdel.php'] = "Delete Package";
