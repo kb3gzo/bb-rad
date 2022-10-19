@@ -82,23 +82,6 @@ $onlyDefaultLocation = !(array_key_exists('CONFIG_LOCATIONS', $configValues)
                             name="operator_pass" value=""
                             type="password" tabindex="2" />
                         
-/*
-
-                        <label for="location">Location</label>
-                        <select id="location" name="location" tabindex="3"
-                            class="form-input"<?= ($onlyDefaultLocation) ? " disabled" : "" ?>>
-                            <?php
-                                if ($onlyDefaultLocation) {
-                                    echo "<option value=\"default\">default</option>\n";
-                                } else {
-                                    $locations = array_keys($configValues['CONFIG_LOCATIONS']);
-                                    foreach ($locations as $location) {
-                                        echo "<option value=\"$location\">$location</option>\n";
-                                    }
-                                }
-                            ?>
-                        </select>
-*/
 
                         <input class="form-submit" type="submit"
                             value="<?= t('text','LoginPlease') ?>" tabindex="4" />
