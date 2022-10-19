@@ -60,19 +60,7 @@
 	</ul>
 
 	<br/>
-	<h3>Extended Capabilities</h3>
-	<ul class="subnav">
-	
-		<li><a href="mng-import-users.php"><b>&raquo;</b>
-			<img src='images/icons/userNew.gif' border='0'>
-			<?php echo t('button','ImportUsers') ?></a>
-		</li>
-		
-	</ul>
-		
-	<br/><br/>
-	
-	
+
 	
 
 </div>
