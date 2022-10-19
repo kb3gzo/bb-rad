@@ -119,6 +119,7 @@ $l['all']['WifiChannel'] = "Wifi Channel";
 
 $l['all']['CheckinTime'] = "Last Checked-In";
 
+$l['all']['SpeedPackage'] = "Speed Package";
 $l['all']['FramedIPAddress'] = "Framed-IP-Address";
 $l['all']['StaticIPAddress'] = "Static IP Address";
 $l['all']['SimultaneousUse'] = "Simultaneous-Use";

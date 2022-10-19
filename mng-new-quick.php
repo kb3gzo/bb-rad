@@ -338,10 +338,10 @@
 		</li>
 		
 		<li class='fieldset'>
-		<label for='group' class='form'><?php echo t('all','Group')?></label>
+		<label for='group' class='form'><?php echo t('all','SpeedPackage')?></label>
 		<?php   
 			include_once 'include/management/populate_selectbox.php';
-			populate_groups("Select Groups","groups[]");
+			populate_groups("Select Plan","groups[]");
 		?>
 
                 <a class='tablenovisit' href='#'
