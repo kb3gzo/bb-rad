@@ -62,7 +62,7 @@ $onlyDefaultLocation = !(array_key_exists('CONFIG_LOCATIONS', $configValues)
                             <img src="images/bb_small.png" border="0" />
                         </a>
                     </h1>
-                    <h2><?= t('all','copyright1') ?></h2>
+                    <h2><c><?= t('all','copyright1') ?></c></h2>
                     <br/>
                 </div><!-- #header -->
 		

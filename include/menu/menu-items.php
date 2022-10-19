@@ -24,9 +24,9 @@
 
                                 <h1><a href="index.php"> <img src="images/bb_small.png" border=0/></a></h1>
 
-                                <h2><c>
+                                <h2>
 									<?php echo t('all','copyright1'); ?>
-								</c></h2>
+								</h2>
 
                                 <ul id="nav">
 				<a name='top'></a>
