@@ -444,33 +444,7 @@
 		<br/>	
 	</fieldset>
 
-	<div id="chooserSpan" class="dateChooser select-free" style="display: none; visibility: hidden; width: 160px;"></div>
-
-        </div>
-
-
-     <div class="tabbertab" title="<?php echo t('title','UserInfo'); ?>">
-
-        <?php
-		$customApplyButton = "<input type=\"submit\" name=\"submit\" value=\"".t('buttons','apply')."\"
-		                        onclick = \"javascript:small_window(document.newuser.username.value,
-		                        document.newuser.password.value, document.newuser.maxallsession.value);\" tabindex=10000
-		                        class='button' />";
-
-                include_once('include/management/userinfo.php');
-        ?>
-
-     </div>
-
-
-
-        <div class="tabbertab" title="<?php echo t('title','BillingInfo'); ?>">
-        <?php
-                $customApplyButton = "<input type='submit' name='submit' value=".t('buttons','apply')." class='button' />";
-                include_once('include/management/userbillinfo.php');
-        ?>
-        </div>
-
+	
 
 </div>
 
