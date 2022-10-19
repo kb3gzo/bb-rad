@@ -35,6 +35,10 @@
 		<li><a href="rep-stat-services.php"><b>&raquo;</b><?php echo t('button','ServicesStatus') ?></a></li>
 		<li><a href="rep-lastconnect.php"><b>&raquo;</b><?php echo t('button','LastConnectionAttempts') ?></a></li>
 
+	<h3>Users</h3>
+
+			<li><a href="rep-logs-radius.php"><b>&raquo;</b><?php echo t('button','NewUserQuick') ?></a></li>
+
 	<h3>Logs</h3>
 
 	        <li><a href="rep-logs-radius.php"><b>&raquo;</b><?php echo t('button','RadiusLog') ?></a></li>
