@@ -760,7 +760,7 @@ $l['button']['DateAccounting'] = "Date Accounting";
 $l['button']['AllRecords'] = "All Records";
 $l['button']['ActiveRecords'] = "Active Records";
 
-$l['button']['PlanUsage'] = "Plan Usage";
+$l['button']['PlanUsage'] = "Bandwidth Usage";
 
 $l['button']['OnlineUsers'] = "Online Users";
 $l['button']['LastConnectionAttempts'] = "Last Connection Attempts";
@@ -1032,7 +1032,7 @@ $l['Intro']['accthotspot.php'] = "Hotspot Accounting";
 $l['Intro']['acctipaddress.php'] = "IP Accounting";
 $l['Intro']['accthotspotcompare.php'] = "Hotspot Comparison";
 $l['Intro']['acctmain.php'] = "Accounting Page";
-$l['Intro']['acctplans.php'] = "Plans Accounting Page";
+$l['Intro']['acctplans.php'] = "Bandwidth Accounting Page";
 $l['Intro']['acctnasipaddress.php'] = "NAS IP Accounting";
 $l['Intro']['acctusername.php'] = "Users Accounting";
 $l['Intro']['acctcustom.php'] = "Custom Accountings";

@@ -37,7 +37,7 @@
 
 <div id="sidebar">
 
-	<h2>Plan Accounting</h2>
+	<h2>Bandwidth Accounting</h2>
 	
 	<h3>Accounting</h3>
 	<ul class="subnav">
