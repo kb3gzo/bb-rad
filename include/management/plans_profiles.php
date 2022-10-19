@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: profiles.php
-* Author: Liran tal <liran.tal@gmail.com>
 * 
 * This file gets all profiles associated with a plan and draw the page
 *

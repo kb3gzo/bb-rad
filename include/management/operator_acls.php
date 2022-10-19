@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: operator_acls.php
-* Author: Liran tal <liran.tal@gmail.com>
 * 
 * Used to provide a listing of the available pages which
 * operators may have access to as taken from the operators table in

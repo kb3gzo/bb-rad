@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: groups.php
-* Author: Liran tal <liran.tal@gmail.com>
 * 
 * This file extends user management pages (specifically edit user
 * page) to allow group management.

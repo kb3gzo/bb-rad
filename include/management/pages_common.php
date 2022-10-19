@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: pages_common.php
-* Author: Liran tal <liran.tal@gmail.com>
 *
 * Provides common operations on different management pages and other
 * categories

@@ -1,12 +1,10 @@
 <?php
 /*********************************************************************
 * Name: logging.php
-* Author: Liran tal <liran.tal@gmail.com>
 *
 * This file is used for controlling the logging actions
 *
 *********************************************************************/
-
 
 /*
 * It is important to understand that when logging.php is included in

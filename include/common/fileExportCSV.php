@@ -1,9 +1,6 @@
 <?php
 /*********************************************************************
  *
- * Filename: fileExport.php
- * Author: Liran Tal <liran.tal@gmail.com>
- *
  * Description:
  * The purpose of this extension is to handle exports of different
  * kinds like CSV andother formats to the user's browser so that

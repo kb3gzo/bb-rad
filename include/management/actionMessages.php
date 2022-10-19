@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: actionMessages.php
-* Author: Liran tal <liran.tal@gmail.com>
 *
 * This file provides control for messages that are printed to the
 * screen in reply to actions such as applying forms, saving data,

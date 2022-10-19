@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: pages_numbering.php
-* Author: Liran tal <liran.tal@gmail.com>
 *
 * This script provides support for spanning alot of table results across several
 * pages with full numbering support, first and last links, etc...

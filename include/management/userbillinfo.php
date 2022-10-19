@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: userbillinfo.php
-* Author: Liran tal <liran.tal@gmail.com>
 * 
 * provides user billing information input fields
 *

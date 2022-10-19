@@ -1,7 +1,6 @@
 <?php
 /*********************************************************************
 * Name: operatorinfo.php
-* Author: Liran tal <liran.tal@gmail.com>
 * 
 * This file extends the operators config pages and adds a section for
 * operator contact information.
