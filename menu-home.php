@@ -37,7 +37,7 @@
 
 	<h3>Users</h3>
 
-			<li><a href="rep-logs-radius.php"><b>&raquo;</b><?php echo t('button','NewUserQuick') ?></a></li>
+			<li><a href="mng-new-quick.php"><b>&raquo;</b><?php echo t('button','NewUserQuick') ?></a></li>
 
 	<h3>Logs</h3>
 
@@ -51,7 +51,6 @@
 	<p class="news">
 		daloRADIUS <br/>
 		RADIUS Management 
-		<a href="https://github.com/lirantal/daloradius" class="more">Read More &raquo;</a>
 	</p>
 
 
