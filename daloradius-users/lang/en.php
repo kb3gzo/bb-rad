@@ -371,7 +371,7 @@ $l['button']['DeleteAccountingRecords'] = "Delete Accounting Records";
 
 $l['button']['ListUsers'] = "List Users";
 $l['button']['NewUser'] = "New User";
-$l['button']['NewUserQuick'] = "New User - Quick Add";
+$l['button']['NewUserQuick'] = "New User";
 $l['button']['BatchAddUsers'] = "Batch Add Users";
 $l['button']['EditUser'] = "Edit User";
 $l['button']['SearchUsers'] = "Search Users";
