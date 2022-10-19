@@ -26,13 +26,9 @@
 			<img src='images/icons/userList.gif' border='0'>
 			<?php echo t('button','ListUsers') ?></a>
 		</li>
-		<li><a href="mng-new.php"><b>&raquo;</b>
-			<img src='images/icons/userNew.gif' border='0'>
-			<?php echo t('button','NewUser') ?></a>
-		</li>
 		<li><a href="mng-new-quick.php"><b>&raquo;</b>
 			<img src='images/icons/userNew.gif' border='0'>
-			<?php echo t('button','NewUserQuick') ?></a>
+			<?php echo t('button','NewUser') ?></a>
 		</li>
 		<li><a href="javascript:document.mngedit.submit();""><b>&raquo;</b>
 			<img src='images/icons/userEdit.gif' border='0'>
