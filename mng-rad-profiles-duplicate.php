@@ -111,14 +111,14 @@
                 <h302> <?php echo t('title','ProfileInfo') ?> </h302>
                 <br/>
 
-                <label for='sourceProfile' class='form'>Profile Name to Duplicate</label>
+                <label for='sourceProfile' class='form'>Package Name to Duplicate</label>
                         <?php
                                 // include 'include/management/populate_selectbox.php'; // already included in menu-mng-rad-profile.php
-                                populate_groups("Select Profile","sourceProfile","form");
+                                populate_groups("Select Package","sourceProfile","form");
                         ?>
                 <br/>
 
-                <label for='profile' class='form'>New Profile Name</label>
+                <label for='profile' class='form'>New Package Name</label>
                 <input name='targetProfile' type='text' id='profile' value='<?php echo $targetProfile ?>' tabindex=101 />
                 <br/>
 
