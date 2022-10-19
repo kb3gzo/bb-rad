@@ -341,12 +341,7 @@
 		<label for='passwordType' class='form'><?php echo t('all','PasswordType')?> </label>
 		<select class='form' tabindex=102 name='passwordType' >
 			<option value='Cleartext-Password'>Cleartext-Password</option>
-			<option value='User-Password'>User-Password</option>
-			<option value='Crypt-Password'>Crypt-Password</option>
-			<option value='MD5-Password'>MD5-Password</option>
-			<option value='SHA1-Password'>SHA1-Password</option>
-			<option value='CHAP-Password'>CHAP-Password</option>
-		</select>
+			</select>
 		<br />
 		</li>
 
