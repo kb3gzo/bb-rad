@@ -120,6 +120,7 @@ $l['all']['WifiChannel'] = "Wifi Channel";
 $l['all']['CheckinTime'] = "Last Checked-In";
 
 $l['all']['FramedIPAddress'] = "Framed-IP-Address";
+$l['all']['FramedIPAddress'] = "StaticIPAddress";
 $l['all']['SimultaneousUse'] = "Simultaneous-Use";
 $l['all']['HgID'] = "HG ID";
 $l['all']['Hg'] = "HG ";

@@ -333,7 +333,7 @@
 		</li>
 
 		<li class='fieldset'>
-		<label for='framedipaddress' class='form'><?php echo t('all','FramedIPAddress')?></label>
+		<label for='framedipaddress' class='form'><?php echo t('all','StaticIPAddress')?></label>
 		<input name='framedipaddress' type='text' value='' tabindex=107 />
 		</li>
 		
