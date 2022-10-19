@@ -46,17 +46,5 @@
 
 	</ul>
 	
-	<h3>Support</h3>
-
-	<p class="news">
-		daloRADIUS <br/>
-		RADIUS Management 
-	</p>
-
-
-	
-
-	
-
 </div>
 

@@ -82,6 +82,8 @@ $onlyDefaultLocation = !(array_key_exists('CONFIG_LOCATIONS', $configValues)
                             name="operator_pass" value=""
                             type="password" tabindex="2" />
                         
+/*
+
                         <label for="location">Location</label>
                         <select id="location" name="location" tabindex="3"
                             class="form-input"<?= ($onlyDefaultLocation) ? " disabled" : "" ?>>
@@ -96,6 +98,8 @@ $onlyDefaultLocation = !(array_key_exists('CONFIG_LOCATIONS', $configValues)
                                 }
                             ?>
                         </select>
+*/
+
                         <input class="form-submit" type="submit"
                             value="<?= t('text','LoginPlease') ?>" tabindex="4" />
                     </form>
