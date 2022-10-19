@@ -312,7 +312,6 @@
 		<li class='fieldset'>
 		<label for='username' class='form'><?php echo t('all','Username')?></label>
 		<input name='username' type='text' id='username' value='' tabindex=100  />
-		<input type='button' value='Random' class='button' onclick="javascript:randomAlphanumeric('username',8,<?php
 		echo "'".$configValues['CONFIG_USER_ALLOWEDRANDOMCHARS']."'" ?>)" />
 		<img src='images/icons/comment.png' alt='Tip' border='0' onClick="javascript:toggleShowDiv('usernameTooltip')" />
 
@@ -326,7 +325,6 @@
 		<label for='password' class='form'><?php echo t('all','Password')?></label>
 		<input name='password' type='text' id='password' value='' <?php if (isset($hiddenPassword)) 
 			echo $hiddenPassword ?> tabindex=101 />
-		<input type='button' value='Random' class='button' onclick="javascript:randomAlphanumeric('password',8,<?php
 		echo "'".$configValues['CONFIG_USER_ALLOWEDRANDOMCHARS']."'" ?>)" />
 		<img src='images/icons/comment.png' alt='Tip' border='0' onClick="javascript:toggleShowDiv('passwordTooltip')" />
 
@@ -388,58 +386,10 @@
 		<h302> <?php echo t('title','Attributes'); ?> </h302>
 	<br/>
 
-		<label for='simultaneoususe' class='form'><?php echo t('all','SimultaneousUse')?></label>
-		<input name='simultaneoususe' type='text' value='' tabindex=106 />
-		<br/>
-
 		<label for='framedipaddress' class='form'><?php echo t('all','FramedIPAddress')?></label>
 		<input name='framedipaddress' type='text' value='' tabindex=107 />
 		<br/>
 
-		<label for='expiration' class='form'><?php echo t('all','Expiration')?></label>		
-		<input value='' id='expiration' name='expiration'  tabindex=108 />
-		<img src="library/js_date/calendar.gif" onclick="showChooser(this, 'expiration', 'chooserSpan', 1950, <?php echo date('Y', time());?>, 'd M Y', false);">
-		<br/>
-
-		<label for='sessiontimeout' class='form'><?php echo t('all','SessionTimeout')?></label>
-		<input value='' id='sessiontimeout' name='sessiontimeout'  tabindex=109 />
-		<select onChange="javascript:setText(this.id,'sessiontimeout')" id="option0" class='form' >
-			<option value="1">calculate time</option>
-			<option value="1">seconds</option>
-			<option value="60">minutes</option>
-			<option value="3600">hours</option>
-			<option value="86400">days</option>
-			<option value="604800">weeks</option>
-			<option value="2592000">months (30 days)</option>
-		</select>
-		<br/>
-
-		<label for='idletimeout' class='form'><?php echo t('all','IdleTimeout')?></label>
-		<input value='' id='idletimeout' name='idletimeout'  tabindex=110 />
-		<select onChange="javascript:setText(this.id,'idletimeout')" id="option1" class='form' >
-			<option value="1">calculate time</option>
-			<option value="1">seconds</option>
-			<option value="60">minutes</option>
-			<option value="3600">hours</option>
-			<option value="86400">days</option>
-			<option value="604800">weeks</option>
-			<option value="2592000">months (30 days)</option>
-		</select>
-		<br/>
-
-		<label for='maxallsession' class='form'><?php 
-			echo t('all','MaxAllSession') ?></label>
-		<input value='' id='maxallsession' name='maxallsession'  tabindex=111 />
-		<select onChange="javascript:setText(this.id,'maxallsession')" id="option2" class='form' >
-			<option value="1">calculate time</option>
-			<option value="1">seconds</option>
-			<option value="60">minutes</option>
-			<option value="3600">hours</option>
-			<option value="86400">days</option>
-			<option value="604800">weeks</option>
-			<option value="2592000">months (30 days)</option>
-		</select>
-		<br/>
 
 		<br/>	
 	</fieldset>
