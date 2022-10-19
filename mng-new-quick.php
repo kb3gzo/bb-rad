@@ -19,7 +19,7 @@
 	if (isset($_POST['submit'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$passwordType = $_POST['passwordType'];
+		$passwordType = 'Cleartext-Password';
 		$groups = $_POST['groups'];
 		$maxallsession = $_POST['maxallsession'];
 		$expiration = $_POST['expiration'];
@@ -337,14 +337,6 @@
 		<input name='framedipaddress' type='text' value='' tabindex=107 />
 		</li>
 		
-		<li class='fieldset'>
-		<label for='passwordType' class='form'><?php echo t('all','PasswordType')?> </label>
-		<select class='form' tabindex=102 name='passwordType' >
-			<option value='Cleartext-Password'>Cleartext-Password</option>
-			</select>
-		<br />
-		</li>
-
 		<li class='fieldset'>
 		<label for='group' class='form'><?php echo t('all','Group')?></label>
 		<?php   
