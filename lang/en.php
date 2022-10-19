@@ -147,10 +147,10 @@ $l['all']['Username'] = "Username";
 $l['all']['Password'] = "Password";
 $l['all']['PasswordType'] = "Password Type";
 $l['all']['IPAddress'] = "IP Address";
-$l['all']['Profile'] = "Profile";
+$l['all']['Profile'] = "Speed Package";
 $l['all']['Group'] = "Group";
 $l['all']['Groupname'] = "Groupname";
-$l['all']['ProfilePriority'] = "Profile Priority";
+$l['all']['ProfilePriority'] = "Package Priority";
 $l['all']['GroupPriority'] = "Group Priority";
 $l['all']['CurrentGroupname'] = "Current Groupname";
 $l['all']['NewGroupname'] = "New Groupname";
@@ -346,7 +346,7 @@ $l['all']['PlanCost'] = "Plan Cost";
 $l['all']['PlanSetupCost'] = "Plan Setup Cost";
 $l['all']['PlanTax'] = "Plan Tax";
 $l['all']['PlanCurrency'] = "Plan Currency";
-$l['all']['PlanGroup'] = "Plan Profile (Group)";
+$l['all']['PlanGroup'] = "Plan Package (Group)";
 $l['all']['PlanType'] = "Plan Type";
 $l['all']['PlanName'] = "Plan Name";
 $l['all']['PlanId'] = "Plan Id";
@@ -565,7 +565,7 @@ $l['Tooltip']['EditUserGroup'] = "Edit User Group";
 $l['Tooltip']['ListUserGroups'] = "List User Groups";
 $l['Tooltip']['DeleteUserGroup'] = "Delete User Group Association";
 
-$l['Tooltip']['EditProfile'] = "Edit Profile";
+$l['Tooltip']['EditProfile'] = "Edit Package";
 
 $l['Tooltip']['EditRealm'] = "Edit Realm";
 $l['Tooltip']['EditProxy'] = "Edit Proxy";
@@ -621,7 +621,7 @@ $l['Tooltip']['geocodeTooltip'] = "Example: -1.002,-2.201<br/>&nbsp;&nbsp;&nbsp;
 					to pin the Hotspot/NAS on the map (see GIS).";
 
 $l['Tooltip']['reassignplanprofiles'] = "If toggled on, when applying user information <br/>
-					the Profiles listed in the Profiles tab will be ignored and <br/>
+					the Packages listed in the Packages tab will be ignored and <br/>
 					profiles will be re-assigned based on the Plans profile association";
 
 /* ********************************************************************************** */
@@ -734,11 +734,11 @@ $l['button']['NewUserGroup'] = "New User-Group Mappings";
 $l['button']['EditUserGroup'] = "Edit User-Group Mappings";
 $l['button']['RemoveUserGroup'] = "Remove User-Group Mappings";
 
-$l['button']['ListProfiles'] = "List Profiles";
-$l['button']['NewProfile'] = "New Profile";
-$l['button']['EditProfile'] = "Edit Profile";
-$l['button']['DuplicateProfile'] = "Duplicate Profile";
-$l['button']['RemoveProfile'] = "Remove Profile";
+$l['button']['ListProfiles'] = "List Packages";
+$l['button']['NewProfile'] = "New Package";
+$l['button']['EditProfile'] = "Edit Package";
+$l['button']['DuplicateProfile'] = "Duplicate Package";
+$l['button']['RemoveProfile'] = "Remove Package";
 
 $l['button']['ListGroupReply'] = "List Group Reply Mappings";
 $l['button']['SearchGroupReply'] = "Search Group Reply";
@@ -792,7 +792,7 @@ $l['button']['LanguageSettings'] = "Language Settings";
 $l['button']['LoggingSettings'] = "Logging Settings";
 $l['button']['InterfaceSettings'] = "Interface Settings";
 
-$l['button']['ReAssignPlanProfiles'] = "Re-Assign Plan Profiles";
+$l['button']['ReAssignPlanProfiles'] = "Re-Assign Plan Packages";
 
 $l['button']['TestUserConnectivity'] = "Test User Connectivity";
 $l['button']['DisconnectUser'] = "Disconnect User";
@@ -862,8 +862,8 @@ $l['title']['VendorAttribute'] = "Vendor Attribute";
 $l['title']['AccountRemoval'] = "Account Removal";
 $l['title']['AccountInfo'] = "Account Info";
 
-$l['title']['Profiles'] = "Profiles";
-$l['title']['ProfileInfo'] = "Profile Info";
+$l['title']['Profiles'] = "Packages";
+$l['title']['ProfileInfo'] = "Packages Info";
 
 $l['title']['GroupInfo'] = "Group Info";
 $l['title']['GroupAttributes'] = "Group Attributes";
@@ -875,7 +875,7 @@ $l['title']['UserInfo'] = "User Info";
 $l['title']['BillingInfo'] = "Billing Info";
 
 $l['title']['Attributes'] = "Attributes";
-$l['title']['ProfileAttributes'] = "Profile Attributes";
+$l['title']['ProfileAttributes'] = "Packages Attributes";
 
 $l['title']['HotspotInfo'] = "Hotspot Info";
 $l['title']['HotspotRemoval'] = "Hotspot Removal";
@@ -884,7 +884,7 @@ $l['title']['ContactInfo'] = "Contact Info";
 
 $l['title']['Plan'] = "Plan";
 
-$l['title']['Profile'] = "Profile";
+$l['title']['Profile'] = "Package";
 $l['title']['Groups'] = "Groups";
 $l['title']['RADIUSCheck'] = "Check Attributes";
 $l['title']['RADIUSReply'] = "Reply Attributes";
@@ -1150,12 +1150,12 @@ $l['Intro']['mngradhuntlist.php'] = "HuntGroup Listing in Database";
 $l['Intro']['mngradhuntedit.php'] = "Edit HuntGroup Record";
 $l['Intro']['mngradhuntdel.php'] = "Remove HuntGroup Record";
 
-$l['Intro']['mngradprofiles.php'] = "Profiles Configuration";
-$l['Intro']['mngradprofilesedit.php'] = "Edit Profiles";
-$l['Intro']['mngradprofilesduplicate.php'] = "Duplicate Profiles";
-$l['Intro']['mngradprofilesdel.php'] = "Delete Profiles";
-$l['Intro']['mngradprofileslist.php'] = "List Profiles";
-$l['Intro']['mngradprofilesnew.php'] = "New Profile";
+$l['Intro']['mngradprofiles.php'] = "Packages Configuration";
+$l['Intro']['mngradprofilesedit.php'] = "Edit Package";
+$l['Intro']['mngradprofilesduplicate.php'] = "Duplicate Package";
+$l['Intro']['mngradprofilesdel.php'] = "Delete Package";
+$l['Intro']['mngradprofileslist.php'] = "List Packages";
+$l['Intro']['mngradprofilesnew.php'] = "New Packages";
 
 $l['Intro']['mngradgroups.php'] = "Groups Configuration";
 
@@ -1285,27 +1285,27 @@ $l['helpPage']['mngradusergroupedit'] = "";
 
 
 $l['helpPage']['mngradprofiles'] = "
-<b>Profiles Management</b> - Manage Profiles for Users by composing a set of Reply Attributes and Check Attributes <br/>
-Profiles can be thought of as the composition of Group Reply and Group Check. <br/>
-<h200><b>List Profiles </b></h200> - List Profiles <br/>
-<h200><b>New Profile </b></h200> - Add a Profile <br/>
-<h200><b>Edit Profile </b></h200> - Edit a Profile <br/>
-<h200><b>Delete Profile </b></h200> - Delete a Profile <br/>
+<b>Package Management</b> - Manage Packages for Users by composing a set of Reply Attributes and Check Attributes <br/>
+Package can be thought of as the composition of Group Reply and Group Check. <br/>
+<h200><b>List Package </b></h200> - List Package <br/>
+<h200><b>New Package </b></h200> - Add a Package <br/>
+<h200><b>Edit Package </b></h200> - Edit a Package <br/>
+<h200><b>Delete Package </b></h200> - Delete a Package <br/>
 ";
 $l['helpPage']['mngradprofilesedit'] = "
-<h200><b>Edit Profile </b></h200> - Edit a Profile <br/>
+<h200><b>Edit Package </b></h200> - Edit a Package <br/>
 ";
 $l['helpPage']['mngradprofilesdel'] = "
-<h200><b>Delete Profile </b></h200> - Delete a Profile <br/>
+<h200><b>Delete Package </b></h200> - Delete a Package <br/>
 ";
 $l['helpPage']['mngradprofilesduplicate'] = "
-<h200><b>Duplicate Profile </b></h200> - Duplicate a Profile's set of attributes to a new one with a different profile name <br/>
+<h200><b>Duplicate Package </b></h200> - Duplicate a Package's set of attributes to a new one with a different profile name <br/>
 ";
 $l['helpPage']['mngradprofileslist'] = "
-<h200><b>List Profiles </b></h200> - List Profiles <br/>
+<h200><b>List Package </b></h200> - List Package <br/>
 ";
 $l['helpPage']['mngradprofilesnew'] = "
-<h200><b>New Profile </b></h200> - Add a Profile <br/>
+<h200><b>New Package </b></h200> - Add a Package <br/>
 ";
 
 $l['helpPage']['mngradgroups'] = "
