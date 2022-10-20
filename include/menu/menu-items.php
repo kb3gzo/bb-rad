@@ -2,8 +2,7 @@
 				
 								<span id="login_data">
 									Welcome, <b><?php echo $operator; ?></b>. <a href="logout.php" title="Logout">&#x274E;</a>
-									<br>
-									Location: <b><?php echo $_SESSION['location_name'] ?></b>.
+									<br>									
 								</span>
 								
 								<span id="sep">
