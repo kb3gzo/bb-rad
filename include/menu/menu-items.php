@@ -4,9 +4,9 @@
 									Welcome, <b><?php echo $operator; ?></b>. <a href="logout.php" title="Logout">&#x274E;</a>
 									<br>									
 								</span>
-								</br>
 								
 								<h1><a href="index.php"> <img src="images/bb_small.png" border=0/></a></h1>
+								</br>
 
                                 <h2>
 									<?php echo t('all','ServerName'); ?>
