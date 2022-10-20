@@ -123,7 +123,7 @@
                 <h302> <?php echo t('title','ProfileInfo') ?> </h302>
                 <br/>
 
-                <label for='profile' class='form'>Profile Name</label>
+                <label for='profile' class='form'>Package Name</label>
                 <input name='profile' type='text' id='profile' value='' tabindex=100 />
                 <br />
 

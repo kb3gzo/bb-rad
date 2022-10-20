@@ -142,11 +142,11 @@
                 <h302> <?php echo t('title','ProfileInfo') ?> </h302>
                 <br/>
 
-                <label for='profile' class='form'>Profile Name</label>
+                <label for='profile' class='form'>Package Name</label>
                 <input name='profile[]' type='text' id='profile' value='<?php echo $profile ?>' tabindex=100 />
                 <br/>
 
-                <label for='profile' class='form'>Remove all user associations with this profile(s)</label>
+                <label for='profile' class='form'>Remove all user associations with this package</label>
                 <input name='profile_delete_assoc' type='checkbox' id='profile_delete_assoc' value='1' tabindex=100 />
                 <br/>
 

@@ -624,7 +624,7 @@ $l['title']['AccountRemoval'] = "Account Removal";
 $l['title']['AccountInfo'] = "Account Info";
 
 $l['title']['Profiles'] = "Packages";
-$l['title']['ProfileInfo'] = "Packages Info";
+$l['title']['ProfileInfo'] = "Package Info";
 
 $l['title']['GroupInfo'] = "Group Info";
 $l['title']['GroupAttributes'] = "Group Attributes";
@@ -636,7 +636,7 @@ $l['title']['UserInfo'] = "User Info";
 $l['title']['BillingInfo'] = "Billing Info";
 
 $l['title']['Attributes'] = "Attributes";
-$l['title']['ProfileAttributes'] = "Packages Attributes";
+$l['title']['ProfileAttributes'] = "Package Attributes";
 
 $l['title']['HotspotInfo'] = "Hotspot Info";
 $l['title']['HotspotRemoval'] = "Hotspot Removal";
