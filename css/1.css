@@ -23,7 +23,7 @@ body {
 
 * html #wrapper
 {
-	w\idth: expression(document.documentElement.clientWidth > 1200 ? "1200px" : "auto");
+	width: expression(document.documentElement.clientWidth > 1200 ? "1200px" : "auto");
 }
 
 #innerwrapper {
@@ -188,7 +188,7 @@ body {
 
 #sidebar {
 	background:#333;
-	width:225px;
+	width:200px;
 	padding:10px 20px 20px 20px;
 	float:left;
 	color:#666;
