@@ -16,7 +16,7 @@
                                 <h1><a href="index.php"> <img src="images/bb_small.png" border=0/></a></h1>
 
                                 <h2>
-									<?php echo t('all','copyright1'); ?>
+									<?php echo t('all','ServerName'); ?>
 								</h2>
 
                                 <ul id="nav">

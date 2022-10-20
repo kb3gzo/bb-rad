@@ -2,7 +2,7 @@
  
 $l['all']['BB-RAD'] = "BB-RAD " . $configValues['DALORADIUS_VERSION'];
 $l['all']['BB-RADVersion'] = "version " . $configValues['DALORADIUS_VERSION'];
-$l['all']['copyright1'] = "RADIUS Server - Bradford Broadband - PRIMARY";
+$l['all']['ServerName'] = "RADIUS Server - Bradford Broadband - PRIMARY";
 $l['all']['copyright2'] = "BB-RAD Copyright &copy; 2007-2019";
 $l['all']['ID'] = "ID";
 $l['all']['PoolName'] = "Pool Name";

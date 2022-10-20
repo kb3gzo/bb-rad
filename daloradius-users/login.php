@@ -36,7 +36,7 @@ include("lang/main.php");
                             <img src="images/bb_small.png" border="0" />
                         </a>
                     </h1>
-                    <h2><?= t('all','copyright1') ?></h2>
+                    <h2><?= t('all','ServerName') ?></h2>
                     <br/>
                 </div><!-- #header -->
                 

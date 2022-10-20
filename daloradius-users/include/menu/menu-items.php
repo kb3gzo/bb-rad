@@ -8,7 +8,7 @@
 
                                 <h2>
                                 
-                                <?php echo t('all','copyright1'); ?>
+                                <?php echo t('all','ServerName'); ?>
                                 
 				                                </h2>
 
