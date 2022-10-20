@@ -5,15 +5,7 @@
 									<br>									
 								</span>
 								
-								<span id="sep">
-									&nbsp;
-								</span>
-						
-								<span id="sep">
-									&nbsp;
-								</span>
-
-                                <h1><a href="index.php"> <img src="images/bb_small.png" border=0/></a></h1>
+								<h1><a href="index.php"> <img src="images/bb_small.png" border=0/></a></h1>
 
                                 <h2>
 									<?php echo t('all','ServerName'); ?>
