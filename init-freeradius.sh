@@ -1,5 +1,5 @@
 #!/bin/bash
-# Executable process script for daloRADIUS freeradius docker image:
+# Executable process script for BB-RAD freeradius docker image:
 # GitHub: git@github.com:lirantal/daloradius.git
 RADIUS_PATH=/etc/freeradius
 

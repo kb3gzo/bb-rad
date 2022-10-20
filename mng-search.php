@@ -24,7 +24,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>daloRADIUS</title>
+<title>BB-RAD</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
 <link rel="stylesheet" href="css/form-field-tooltip.css" type="text/css" media="screen,projection" />
@@ -74,7 +74,7 @@
 			".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".id, IFNULL(disabled.username,0) as disabled
 			FROM userinfo
 			LEFT JOIN ".$configValues['CONFIG_DB_TBL_RADUSERGROUP']." disabled
-			 ON disabled.username=".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".username AND disabled.groupname = 'daloRADIUS-Disabled-Users'
+			 ON disabled.username=".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".username AND disabled.groupname = 'BB-RAD-Disabled-Users'
 			WHERE ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".firstname like '".$dbSocket->escapeSimple($username)."%' or ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".lastname like '".$dbSocket->escapeSimple($username)."%' or ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".username like '".$dbSocket->escapeSimple($username)."%' or ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".homephone  like '".$dbSocket->escapeSimple($username)."%' or ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".workphone  like '".$dbSocket->escapeSimple($username)."%'  or ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".mobilephone  like '".$dbSocket->escapeSimple($username)."%'" .
 			" GROUP BY ".$configValues['CONFIG_DB_TBL_DALOUSERINFO'].".UserName ORDER BY $orderBy $orderType LIMIT $offset, $rowsPerPage";
 	$res = $dbSocket->query($sql);

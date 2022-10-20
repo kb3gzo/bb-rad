@@ -1,7 +1,7 @@
 <?php
 /*
  *********************************************************************************************************
- * daloRADIUS - RADIUS Web Platform
+ * BB-RAD - RADIUS Web Platform
  * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or
@@ -15,7 +15,7 @@
  *
  *********************************************************************************************************
  * Description:
- *              daloRADIUS Configuration File
+ *              BB-RAD Configuration File
  *
  * Modification Date:
  *              Mon Mar 28 22:55:00 EDT 2011

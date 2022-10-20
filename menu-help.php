@@ -20,7 +20,7 @@
 	<h3>Support</h3>
 
 	<p class="news">
-		daloRADIUS version svn-trnk
+		BB-RAD version svn-trnk
 		RADIUS Management 
 		<a href="https://github.com/lirantal/daloradius" class="more">Read More &raquo;</a>
 	</p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>daloRADIUS</title>
+<title>BB-RAD</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
 <link rel="stylesheet" href="css/form-field-tooltip.css" type="text/css" media="screen,projection" />
@@ -33,7 +33,7 @@ include_once ("lang/main.php");
 		<h3>Log Files</h3>
 
 			<li><a href="javascript:document.daloradius_log.submit();"><b>&raquo;</b>
-			<img src='images/icons/reportsLogs.png' border='0'>&nbsp;<?php echo t('button','daloRADIUSLog') ?></a>
+			<img src='images/icons/reportsLogs.png' border='0'>&nbsp;<?php echo t('button','BB-RADLog') ?></a>
                         <form name="daloradius_log" action="rep-logs-daloradius.php" method="get" class="sidebar">
 	                        <select class="generic" name="daloradiusLineCount" type="text">
 					<?php if (isset($daloradiusLineCount)) {

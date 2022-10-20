@@ -70,7 +70,7 @@ function getHardDelayNodes($dbSocket) {
 
 		$message = getHTMLMessage($row);
 		
-		$subject = "daloRADIUS Node Monitor: Offline Node";
+		$subject = "BB-RAD Node Monitor: Offline Node";
 		sendEmailNotification($subject, $message);
 
 	}
@@ -95,7 +95,7 @@ function sendEmailNotification($subject, $message) {
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	$headers .= 'To: System Administrator <'.$to.'>' . "\r\n";
-	$headers .= 'From: daloRADIUS Node Monitor<'.$from.'>' . "\r\n";
+	$headers .= 'From: BB-RAD Node Monitor<'.$from.'>' . "\r\n";
 	
 	// mail it
 	mail($to, $subject, $message, $headers);
@@ -109,7 +109,7 @@ function sendEmailNotification($subject, $message) {
 function getHTMLMessage($table) {
 
 	$result = "";
-	$result .= "<html><head><title>daloRADIUS Node Monitor";
+	$result .= "<html><head><title>BB-RAD Node Monitor";
 	$result .= "</title></head>";
 	$result .= "<body><table>";
 	

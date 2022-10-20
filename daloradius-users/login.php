@@ -19,7 +19,7 @@ include("lang/main.php");
     <head>
         <script src="library/javascript/pages_common.js"
             type="text/javascript"></script>
-        <title>daloRADIUS</title>
+        <title>BB-RAD</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="../css/1.css" type="text/css"
             media="screen,projection" />
@@ -57,7 +57,7 @@ include("lang/main.php");
                             value="<?= t('text','LoginPlease') ?>" tabindex="3" />
                     </form>
                     
-                    <small class="form-caption"><?= t('all','daloRADIUS') ?></small>
+                    <small class="form-caption"><?= t('all','BB-RAD') ?></small>
                     
                     
                     <div id="inner-box">

@@ -1,7 +1,7 @@
 <?php
 /*
  *********************************************************************************************************
- * daloRADIUS - RADIUS Web Platform
+ * BB-RAD - RADIUS Web Platform
  * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@
 	include (dirname(__FILE__).'/tableConventions.php');
 
 	// setup database connectio information according to the session's location name which is held in $SESSION['location_name'].
-	// this is introduced in order to provide daloRADIUS to authenticate and manage several database backends without having to
+	// this is introduced in order to provide BB-RAD to authenticate and manage several database backends without having to
 	// install several web directories of daloradius
 
 	if ((isset($_SESSION['location_name'])) && ($_SESSION['location_name'] == "default")) {

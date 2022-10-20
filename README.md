@@ -1,9 +1,9 @@
 # About
 
-daloRADIUS (http://www.daloradius.com) is an advanced RADIUS web management application aimed at managing hotspots and
+BB-RAD (http://www.daloradius.com) is an advanced RADIUS web management application aimed at managing hotspots and
 general-purpose ISP deployments.
 
-daloRADIUS is written in PHP and JavaScript and utilizes a database abstraction
+BB-RAD is written in PHP and JavaScript and utilizes a database abstraction
 layer which means that it supports many database systems, among them the popular
 MySQL, PostgreSQL, Sqlite, MsSQL, and many others.
 
@@ -51,7 +51,7 @@ It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a databa
     * Display of All Accounting records
       the entire content of the radacct table in the radius database
     * Display of Active Accounting records
-      performed by an algorithm implemented by daloRADIUS itself to calculate if
+      performed by an algorithm implemented by BB-RAD itself to calculate if
       an account has expired or not based on it's Max-All-Session attribute or Expiration attribute
 	* Custom Accounting Query
 
@@ -73,8 +73,8 @@ It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a databa
 
 ### Logs Reporting
 
-    * daloRADIUS Log
-      daloRADIUS keeps a log file for all the actions it performs itself (viewing pages,
+    * BB-RAD Log
+      BB-RAD keeps a log file for all the actions it performs itself (viewing pages,
       form actions like deleting users, creating new hotspots, queries submission as in
       performing user accounting and more)
     * RADIUS Server Log
@@ -88,7 +88,7 @@ It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a databa
 ### Status Reporting
 
     * Server Status
-      Provides detailed information on the server daloRADIUS is deployed.
+      Provides detailed information on the server BB-RAD is deployed.
       Information such as CPU utilization, uptime, memory, disks information, and more.
     * RADIUS Status
       Provides information whether the freeradius server is running along with the database
@@ -121,7 +121,7 @@ Provides visual graphs and statistical listing for the entire server, all-time i
       credentials (username and password), radius database tables names (radcheck, radacct, etc),
       and database password encryption type (none, md5, sha1)
     * Language Settings
-      daloRADIUS is multi-lingual and supports currently English and Russian language packs
+      BB-RAD is multi-lingual and supports currently English and Russian language packs
     * Logging Settings and Debugging
       Logging of different actions, queries and page visiting performed on different pages.
       Also supports debugging of SQL queries executed.
@@ -142,7 +142,7 @@ Provides visual graphs and statistical listing for the entire server, all-time i
 
 ### Operators
 
-daloRADIUS supports Operators for complete management of the entire platform.
+BB-RAD supports Operators for complete management of the entire platform.
 Different Operators can be added with their contact information and ACLs settings to
 grant or revoke them of permissions to access different pages.
 

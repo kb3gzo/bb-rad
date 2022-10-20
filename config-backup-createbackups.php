@@ -467,7 +467,7 @@
 
 	</div>
 
-     <div class="tabbertab" title="<?php echo t('title','daloRADIUSTables'); ?>">
+     <div class="tabbertab" title="<?php echo t('title','BB-RADTables'); ?>">
 
         <fieldset>
 

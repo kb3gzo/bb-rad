@@ -1,5 +1,5 @@
 #!/bin/bash
-# Executable process script for daloRADIUS docker image:
+# Executable process script for BB-RAD docker image:
 # GitHub: git@github.com:lirantal/daloradius.git
 DALORADIUS_PATH=/var/www/html
 DALORADIUS_CONF_PATH=/var/www/html/library/daloradius.conf.php
@@ -40,15 +40,15 @@ function init_daloradius {
 		sed -i "s/\$configValues\['CONFIG_MAIL_SMTPAUTH'\] = .*;/\$configValues\['CONFIG_MAIL_SMTPAUTH'\] = '$MAIL_AUTH';/" $DALORADIUS_PATH/library/daloradius.conf.php
 	fi
 
-	echo "daloRADIUS initialization completed."
+	echo "BB-RAD initialization completed."
 }
 
 function init_database {
 	mysql -h "$MYSQL_HOST" -u "$MYSQL_USER" -p"$MYSQL_PASSWORD" "$MYSQL_DATABASE" < $DALORADIUS_PATH/contrib/db/mysql-daloradius.sql
-	echo "Database initialization for daloRADIUS completed."
+	echo "Database initialization for BB-RAD completed."
 }
 
-echo "Starting daloRADIUS..."
+echo "Starting BB-RAD..."
 
 # wait for MySQL-Server to be ready
 while ! mysqladmin ping -h"$MYSQL_HOST" --silent; do
@@ -58,7 +58,7 @@ done
 
 INIT_LOCK=/internal_data/.init_done
 if test -f "$INIT_LOCK"; then
-	echo "Init lock file exists, skipping initial setup of daloRADIUS."
+	echo "Init lock file exists, skipping initial setup of BB-RAD."
 else
 	init_daloradius
 	date > $INIT_LOCK

@@ -20,12 +20,12 @@ function updateErrorHandler($err) {
 }
 
 /* check if the configuration parameter DALORADIUS_VERSION was set. This is later on used to automatically display
-  * the user with the auto-detected daloRADIUS version. Otherwise an error message is displayed, asking the user to enter
-  * the  daloRADIUS version that is currently installed.
+  * the user with the auto-detected BB-RAD version. Otherwise an error message is displayed, asking the user to enter
+  * the  BB-RAD version that is currently installed.
   */
 if (!isset($configValues['DALORADIUS_VERSION'])) {
 	$failureMsg .= "Couldn't find the configuration variable DALORADIUS_VERSION defined in <b>daloradius.conf.php</b><br/>";
-	$missingVersion = "Failed detetion of daloRADIUS Version. Choose from the list";
+	$missingVersion = "Failed detetion of BB-RAD Version. Choose from the list";
 }
 
 
@@ -1199,8 +1199,8 @@ if (isset($_POST['submit'])) {
 		
 		
 		
-		-- Begin daloRADIUS related node information
-		-- implemented for supporting non-mesh devices (openwrt/dd-wrt, etc) with daloRADIUS's
+		-- Begin BB-RAD related node information
+		-- implemented for supporting non-mesh devices (openwrt/dd-wrt, etc) with BB-RAD's
 		-- custome script for checking-in
 		
 		  `wan_iface` varchar(128) default NULL,
@@ -1579,8 +1579,8 @@ if (isset($_POST['submit'])) {
 		}
 		
 		$sql = "
-		-- Adding new custom daloRADIUS groups
-		INSERT IGNORE INTO `radgroupcheck` (Groupname,Attribute,Op,Value) VALUES ('daloRADIUS-Disabled-Users','Auth-Type', ':=', 'Reject');
+		-- Adding new custom BB-RAD groups
+		INSERT IGNORE INTO `radgroupcheck` (Groupname,Attribute,Op,Value) VALUES ('BB-RAD-Disabled-Users','Auth-Type', ':=', 'Reject');
 		";
 		$res = $dbSocket->query($sql);
 	
@@ -1750,12 +1750,12 @@ if (isset($_POST['submit'])) {
 	}
 
 	
-	$configValues['DALORADIUS_VERSION'] = $databaseVersion;		// after finishing with upgrade, update the daloRADIUS version parameter in library/daloradius.conf.php
-	include ("library/config_write.php");						// save the new database version for daloRADIUS in the config file.
+	$configValues['DALORADIUS_VERSION'] = $databaseVersion;		// after finishing with upgrade, update the BB-RAD version parameter in library/daloradius.conf.php
+	include ("library/config_write.php");						// save the new database version for BB-RAD in the config file.
 
 	$updateStatus = "true";
 	$successMsg .= "<br/>Finished upgrade procedure to version $databaseVersion.
-			<br/><br/><a href='index.php'>Return</a> to daloRADIUS Platform login.";
+			<br/><br/><a href='index.php'>Return</a> to BB-RAD Platform login.";
 	
 	// append to the failureMsg variable all the errors which took place during the database queries.
 	// the failureMsg variable is then echo'ed while in the div element for the action Messages
@@ -1770,7 +1770,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>daloRADIUS</title>
+<title>BB-RAD</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/1.css" type="text/css" media="screen,projection" />
 <script src="library/javascript/pages_common.js" type="text/javascript"></script>
@@ -1804,7 +1804,7 @@ if (isset($_POST['submit'])) {
                                 </ul>
                                 <ul id="subnav">
 					<div id="logindiv" style="text-align: right;">
-                                                <li>daloRADIUS Update/Upgrade</li><br/>
+                                                <li>BB-RAD Update/Upgrade</li><br/>
 					</div>
                                 </ul>
 								
@@ -1835,7 +1835,7 @@ if (isset($_POST['submit'])) {
 		
 	<h2 id="Intro"><a href="#"></a></h2>
 	<center>
-		<h2> daloRADIUS Platform - Update </h2>
+		<h2> BB-RAD Platform - Update </h2>
 		<br/>
 	</center>
 
@@ -1920,7 +1920,7 @@ if (isset($_POST['submit'])) {
 			echo $missingVersion;
 		} else {
 			$option = "<option value=\"".$configValues['DALORADIUS_VERSION']."\">".$configValues['DALORADIUS_VERSION']."</option>";
-			echo "Successfully detected your daloRADIUS version as";
+			echo "Successfully detected your BB-RAD version as";
 		}
 		*/
 
@@ -1929,7 +1929,7 @@ if (isset($_POST['submit'])) {
 		   asking the user to choose his daloradius version (where 0.9-8 is not an option since it's the NEW version) */
 
 		$option = "<option value=\"\">Please select</option>";
-		echo "Your daloRADIUS version: ";
+		echo "Your BB-RAD version: ";
 	?>
 
 		</label>

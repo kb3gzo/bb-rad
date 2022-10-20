@@ -2,7 +2,7 @@
 
 /*
  *******************************************************************************
- * daloRADIUS - RADIUS Web Platform
+ * BB-RAD - RADIUS Web Platform
  * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or
@@ -24,7 +24,7 @@
  *******************************************************************************
  */
 
-// daloRADIUS session start function support timestamp management
+// BB-RAD session start function support timestamp management
 function dalo_session_start() {
     ini_set('session.use_strict_mode', 0);
     session_start();
@@ -40,7 +40,7 @@ function dalo_session_start() {
     }
 }
 
-// daloRADIUS session regenerate id function
+// BB-RAD session regenerate id function
 // should be used at least on login and logout
 function dalo_session_regenerate_id() {
     if (session_status() != PHP_SESSION_ACTIVE) {
@@ -48,7 +48,7 @@ function dalo_session_regenerate_id() {
     }
     
     $session_id = (function_exists('session_create_id'))
-        ? session_create_id('daloRADIUS-') : uniqid('daloRADIUS-');
+        ? session_create_id('BB-RAD-') : uniqid('BB-RAD-');
     
     $_SESSION['deleted_time'] = time();
     session_commit();
@@ -60,7 +60,7 @@ function dalo_session_regenerate_id() {
     session_start();
 }
 
-// daloRADIUS session destroy and clean all session variables
+// BB-RAD session destroy and clean all session variables
 function dalo_session_destroy() {
     // unset all of the session variables.
     $_SESSION = array();

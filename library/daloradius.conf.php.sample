@@ -78,7 +78,7 @@ $configValues['CONFIG_INVOICE_ITEM_TEMPLATE'] = 'invoice_item_template.html';
 
 /*
 // Locations Configuration directives
-// Locations directives are support for accessing different databases from the daloRADIUS Login console
+// Locations directives are support for accessing different databases from the BB-RAD Login console
 // adjust the locations below for databases you are running (if you are running more than one).
 // You could configure invoice templates for each location - optional.
 $configValues['CONFIG_LOCATIONS'] =                     array(

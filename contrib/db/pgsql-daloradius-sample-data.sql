@@ -194,7 +194,7 @@ CREATE TABLE radpostauth (
 
 
 --
--- Table structure for daloRADIUS's specific tables
+-- Table structure for BB-RAD's specific tables
 --
 
 CREATE TABLE hotspots (

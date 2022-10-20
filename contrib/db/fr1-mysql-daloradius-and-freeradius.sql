@@ -891,7 +891,7 @@ SET character_set_client = @saved_cs_client;
 
 LOCK TABLES `radgroupcheck` WRITE;
 /*!40000 ALTER TABLE `radgroupcheck` DISABLE KEYS */;
-INSERT INTO `radgroupcheck` VALUES (1,'daloRADIUS-Disabled-Users','Auth-Type',':=','Reject');
+INSERT INTO `radgroupcheck` VALUES (1,'BB-RAD-Disabled-Users','Auth-Type',':=','Reject');
 /*!40000 ALTER TABLE `radgroupcheck` ENABLE KEYS */;
 UNLOCK TABLES;
 

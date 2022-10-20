@@ -1,7 +1,7 @@
 <?php
 /*
  *********************************************************************************************************
- * daloRADIUS - RADIUS Web Platform
+ * BB-RAD - RADIUS Web Platform
  * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or
@@ -75,7 +75,7 @@ function userInvoiceAdd($userId, $invoiceInfo = array(), $invoiceItems = array()
 	$myinvoiceInfo['date'] = $currDate;
 	$myinvoiceInfo['status_id'] = 1;			 // defaults to invoice status of 'open'
 	$myinvoiceInfo['type_id'] = 1;			 // defaults to invoice type of 'Plans'
-	$myinvoiceInfo['notes'] = 'provisioned new user from daloRADIUS platform';
+	$myinvoiceInfo['notes'] = 'provisioned new user from BB-RAD platform';
 	$invoiceInfo = array_merge($myinvoiceInfo, $invoiceInfo);
 
 

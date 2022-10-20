@@ -1,7 +1,7 @@
 <?php
 /*
  *********************************************************************************************************
- * daloRADIUS - RADIUS Web Platform
+ * BB-RAD - RADIUS Web Platform
  * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or
@@ -25,7 +25,7 @@
 echo "
 	<center>
 
-		<h2> daloRADIUS Userportal </h2>
+		<h2> BB-RAD Userportal </h2>
 		<h3> Welcome to the user Portal </h3>
 		<br/><br/><br/>
 				

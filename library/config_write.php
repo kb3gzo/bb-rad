@@ -9,7 +9,7 @@ if ($fp) {
 		"<?php\n".
 		"/*\n".
 		" *********************************************************************************************************\n".
-		" * daloRADIUS - RADIUS Web Platform\n".
+		" * BB-RAD - RADIUS Web Platform\n".
 		" * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.\n".
 		" *\n".
 		" * This program is free software; you can redistribute it and/or\n".
@@ -23,7 +23,7 @@ if ($fp) {
 		" *\n".
 		" *********************************************************************************************************\n".
 		" * Description:\n".
-		" *              daloRADIUS Configuration File\n".
+		" *              BB-RAD Configuration File\n".
 		" *\n".
 		" * Modification Date:\n".
 		" *              $date\n".

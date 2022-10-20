@@ -25,7 +25,7 @@ $onlyDefaultLocation = !(array_key_exists('CONFIG_LOCATIONS', $configValues)
     <head>
         <script src="library/javascript/pages_common.js"
             type="text/javascript"></script>
-        <title>daloRADIUS</title>
+        <title>BB-RAD</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="css/1.css" type="text/css"
             media="screen,projection" />
@@ -66,7 +66,7 @@ $onlyDefaultLocation = !(array_key_exists('CONFIG_LOCATIONS', $configValues)
                             value="<?= t('text','LoginPlease') ?>" tabindex="4" />
                     </form>
                     
-                    <small class="form-caption"><?= t('all','daloRADIUS') ?></small>
+                    <small class="form-caption"><?= t('all','BB-RAD') ?></small>
                     
                     <?php
                         if (array_key_exists('operator_login_error', $_SESSION)

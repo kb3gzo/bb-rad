@@ -85,11 +85,11 @@ function handleBadUsers($dbSocket) {
 		$message = getHTMLMessage($row);
 		
 		if ($traffic >= $configValues['SOFTLIMIT']) {
-			$subject = "daloRADIUS Traffic Notification: Soft Limit";
+			$subject = "BB-RAD Traffic Notification: Soft Limit";
 			sendEmailNotification($subject, $message);
 			
 		} else if ($traffic >= $configValues['HARDLIMIT']) {
-			$subject = "daloRADIUS Traffic Notification: Hard Limit";
+			$subject = "BB-RAD Traffic Notification: Hard Limit";
 			sendEmailNotification($subject, $message);
 			
 		} else
@@ -117,7 +117,7 @@ function sendEmailNotification($subject, $message) {
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
 	$headers .= 'To: System Administrator <'.$to.'>' . "\r\n";
-	$headers .= 'From: daloRADIUS Traffic Monitoring<'.$from.'>' . "\r\n";
+	$headers .= 'From: BB-RAD Traffic Monitoring<'.$from.'>' . "\r\n";
 	
 	// mail it
 	mail($to, $subject, $message, $headers);
@@ -131,7 +131,7 @@ function sendEmailNotification($subject, $message) {
 function getHTMLMessage($table) {
 
 	$result = "";
-	$result .= "<html><head><title>daloRADIUS Traffic Monitoring";
+	$result .= "<html><head><title>BB-RAD Traffic Monitoring";
 	$result .= "</title></head>";
 	$result .= "<body><table>";
 	

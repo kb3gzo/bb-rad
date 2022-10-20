@@ -1,16 +1,16 @@
 #/*
 # *********************************************************************************************************
-# * daloRADIUS - RADIUS Web Platform
+# * BB-RAD - RADIUS Web Platform
 # * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
 # *
 # *
-# * daloRADIUS Crontab script entries
+# * BB-RAD Crontab script entries
 # *
 # */
 
 # -- configuration start
 
-# change to set daloRADIUS's contrib/scripts/ directory
+# change to set BB-RAD's contrib/scripts/ directory
 # by default this crontab script is in the same directory of the scripts which is
 # why this is left as `pwd`. if you move it elsewhere, change accordingly.
 

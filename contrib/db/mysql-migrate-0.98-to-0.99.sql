@@ -280,8 +280,8 @@ CREATE TABLE IF NOT EXISTS `node` (
 
 
 
--- Begin daloRADIUS related node information
--- implemented for supporting non-mesh devices (openwrt/dd-wrt, etc) with daloRADIUS's
+-- Begin BB-RAD related node information
+-- implemented for supporting non-mesh devices (openwrt/dd-wrt, etc) with BB-RAD's
 -- custome script for checking-in
 
   `wan_iface` varchar(128) default NULL,
@@ -618,8 +618,8 @@ INSERT INTO `operators_acl` VALUES
 
 
 
--- Adding new custom daloRADIUS groups
-INSERT IGNORE INTO `radgroupcheck` (Groupname,Attribute,Op,Value) VALUES ('daloRADIUS-Disabled-Users','Auth-Type', ':=', 'Reject');
+-- Adding new custom BB-RAD groups
+INSERT IGNORE INTO `radgroupcheck` (Groupname,Attribute,Op,Value) VALUES ('BB-RAD-Disabled-Users','Auth-Type', ':=', 'Reject');
 
 
 -- Adding ACL for Reports->Status->UPS page

@@ -1,5 +1,5 @@
 /*
-PostgreSQL schema for daloRADIUS
+PostgreSQL schema for BB-RAD
 */
 
 

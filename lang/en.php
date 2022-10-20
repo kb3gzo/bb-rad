@@ -1,9 +1,9 @@
 <?php
  
-$l['all']['daloRADIUS'] = "daloRADIUS " . $configValues['DALORADIUS_VERSION'];
-$l['all']['daloRADIUSVersion'] = "version " . $configValues['DALORADIUS_VERSION'];
+$l['all']['BB-RAD'] = "BB-RAD " . $configValues['DALORADIUS_VERSION'];
+$l['all']['BB-RADVersion'] = "version " . $configValues['DALORADIUS_VERSION'];
 $l['all']['copyright1'] = "RADIUS Server - Bradford Broadband - PRIMARY";
-$l['all']['copyright2'] = "daloRADIUS Copyright &copy; 2007-2019";
+$l['all']['copyright2'] = "BB-RAD Copyright &copy; 2007-2019";
 $l['all']['ID'] = "ID";
 $l['all']['PoolName'] = "Pool Name";
 $l['all']['CalledStationId'] = "CalledStationId";
@@ -531,7 +531,7 @@ $l['button']['History'] = "History";
 $l['button']['ServerStatus'] = "Server Status";
 $l['button']['ServicesStatus'] = "Services Status";
 
-$l['button']['daloRADIUSLog'] = "daloRADIUS Log";
+$l['button']['BB-RADLog'] = "BB-RAD Log";
 $l['button']['RadiusLog'] = "Radius Log";
 $l['button']['SystemLog'] = "System Log";
 $l['button']['BootLog'] = "Boot Log";
@@ -604,7 +604,7 @@ $l['title']['BatchRemoval'] = "Batch Removal";
 
 $l['title']['Backups'] = "Backups";
 $l['title']['FreeRADIUSTables'] = "FreeRADIUS Tables";
-$l['title']['daloRADIUSTables'] = "daloRADIUS Tables";
+$l['title']['BB-RADTables'] = "BB-RAD Tables";
 
 $l['title']['IPPoolInfo'] = "IP-Pool Info";
 
@@ -853,10 +853,10 @@ $l['Intro']['repstatserver.php'] = "Server Status and Information";
 $l['Intro']['reponline.php'] = "Listing Online Users";
 $l['Intro']['replogssystem.php'] = "System Logfile";
 $l['Intro']['replogsradius.php'] = "RADIUS Server Logfile";
-$l['Intro']['replogsdaloradius.php'] = "daloRADIUS Logfile";
+$l['Intro']['replogsdaloradius.php'] = "BB-RAD Logfile";
 $l['Intro']['replogsboot.php'] = "Boot Logfile";
 $l['Intro']['replogs.php'] = "Logs";
-$l['Intro']['rephbdashboard.php'] = "daloRADIUS NAS Dashboard";
+$l['Intro']['rephbdashboard.php'] = "BB-RAD NAS Dashboard";
 
 $l['Intro']['repmain.php'] = "Reports Page";
 $l['Intro']['repstatus.php'] = "Status Page";
@@ -1077,7 +1077,7 @@ $l['helpPage']['mngradgroupcheckedit'] = "
 $l['helpPage']['mngradgroupchecksearch'] = "
 <h200><b>Search Group Check </b></h200> - Search a Group Check Mapping <br/>
 to use a wildcard you may either type the % character which is familiar in SQL or you may use the more common *
-for convenience reasons and daloRADIUS will translate it to %
+for convenience reasons and BB-RAD will translate it to %
 ";
 
 $l['helpPage']['mngradgroupreplynew'] = "
@@ -1095,7 +1095,7 @@ $l['helpPage']['mngradgroupreplyedit'] = "
 $l['helpPage']['mngradgroupreplysearch'] = "
 <h200><b>Search Group Reply </b></h200> - Search a Group Reply </ Mapping <br/>
 to use a wildcard you may either type the % character which is familiar in SQL or you may use the more common *
-for convenience reasons and daloRADIUS will translate it to %
+for convenience reasons and BB-RAD will translate it to %
 ";
 
 
@@ -1190,8 +1190,8 @@ to disconnect a user and terminate his/her session in a given NAS.<br/>
 ";
 $l['helpPage']['configmainttestuser'] = "
 <h200><b>Test User Connectivity</b></h200> - Send an Access-Request to the RADIUS Server to check if a user credentials are valid.<br/>
-daloRADIUS uses the radclient binary utility to perform the test and returns the results of the command after it finishes. <br/>
-daloRADIUS counts on the radclient binary being available in your \$PATH environment variable, if it is not, please make
+BB-RAD uses the radclient binary utility to perform the test and returns the results of the command after it finishes. <br/>
+BB-RAD counts on the radclient binary being available in your \$PATH environment variable, if it is not, please make
 corrections to the library/exten-maint-radclient.php file.<br/><br/>
 
 Please note that it may take a while for the test to finish (up to several seconds [10-20 seconds or so]) because of failures and
@@ -1209,8 +1209,8 @@ For terminating a user's session it is required that the NAS support the PoD or 
 documentation for this. Moreover, it is required to know the NAS ports for PoD or CoA packets, whereas newer NASs use port 3799
 while other ones are configured to receive the packet on port 1700.
 
-daloRADIUS uses the radclient binary utility to perform the test and returns the results of the command after it finishes. <br/>
-daloRADIUS counts on the radclient binary being available in your \$PATH environment variable, if it is not, please make
+BB-RAD uses the radclient binary utility to perform the test and returns the results of the command after it finishes. <br/>
+BB-RAD counts on the radclient binary being available in your \$PATH environment variable, if it is not, please make
 corrections to the library/exten-maint-radclient.php file.<br/><br/>
 
 Please note that it may take a while for the test to finish (up to several seconds [10-20 seconds or so]) because of failures and
@@ -1261,7 +1261,7 @@ $l['helpPage']['rephistory'] = "Lists all activity performed on management items
 Creation Date, Creation By as well as Updated Date and Update By history fields";
 $l['helpPage']['replastconnect'] = "Lists all login attempts to the RADIUS server, both successful and failed logins";
 $l['helpPage']['replogsboot'] = "Monitor Operating System Boot log - equivalent to running the dmesg command.";
-$l['helpPage']['replogsdaloradius'] = "Monitor daloRADIUS's Logfile.";
+$l['helpPage']['replogsdaloradius'] = "Monitor BB-RAD's Logfile.";
 $l['helpPage']['replogsradius'] = "Monitor FreeRADIUS's Logfile.";
 $l['helpPage']['replogssystem'] = "Monitor Operating System Logfile.";
 $l['helpPage']['rephb'] = "";
@@ -1273,7 +1273,7 @@ $l['helpPage']['mngbatchdel'] = "";
 $l['helpPage']['repbatchdetails'] = "Provides a list of active users of this batch instance";
 $l['helpPage']['replogs'] = "
 <b>Logs</b><br/>
-<h200><b>daloRADIUS Log</b></h200> - Monitor daloRADIUS's Logfile.<br/>
+<h200><b>BB-RAD Log</b></h200> - Monitor BB-RAD's Logfile.<br/>
 <h200><b>RADIUS Log</b></h200> - Monitor FreeRADIUS's Logfile - equivalent to /var/log/freeradius/radius.log or /usr/local/var/log/radius/radius.log.
 Other possible locations for the logfile may take place, if this is the case please adjust the configuration accordingly.<br/>
 <h200><b>System Log</b></h200> - Monitor Operating System Logfile - equivalent to /var/log/syslog or /var/log/message on most platform.
@@ -1291,7 +1291,7 @@ for users. <br/> These are pulled from the database's postauth table which is re
 in FreeRADIUS's config file to actually log these.<br/>
 <h200><b>Top User</b></h200> - Provides a listing of the top N users for bandwidth consumption and session time used<br/><br/>
 <b>Sub-Category Reports</b><br/>
-<h200><b>Logs</b></h200> - Provides access to daloRADIUS logfile, FreeRADIUSs logfile, System's logfile and Boot logfile<br/>
+<h200><b>Logs</b></h200> - Provides access to BB-RAD logfile, FreeRADIUSs logfile, System's logfile and Boot logfile<br/>
 <h200><b>Status</b></h200> - Provides information on server status and RADIUS Components status";
 $l['helpPage']['repstatradius'] = "Provides general information about the server itself: CPU Usage, Processes, Uptime, Memory usage, etc.
 ";
@@ -1447,7 +1447,7 @@ $l['helpPage']['acctmaintenance'] = "
 ";
 $l['helpPage']['acctmaintenancecleanup'] = "
 <h200><b>Cleanup Stale Sessions</b></h200> - Cleanup Stale Sessions by username or date.<br/><br/>
-	A stale session occurs when a user connection remains as active in FreeRADIUS (so, in daloRADIUS), but it does not exists in the NAS.
+	A stale session occurs when a user connection remains as active in FreeRADIUS (so, in BB-RAD), but it does not exists in the NAS.
 	This is normally caused by a lost disconnect message from the NAS to FreeRADIUS.</br></br>
 	You have two choices to cleanup stale sessions, use them with caution:<br/>
 	&nbsp;&bullet; By Username: This option will <b>CLOSE</b> all opened sessions for a username in the FreeRADIUS database.<br/>
@@ -1491,7 +1491,7 @@ existing hotspot entries by left-clicking on existing hotspot flags.<br/><br/>
 
 Another important issue is that each computer on the network requires a unique Registration code which you 
 can obtain from Google Maps API page by providing the complete web address to the hosted directory of
-daloRADIUS application on your server. Once you have obtained that code from Google, simply paste it in the
+BB-RAD application on your server. Once you have obtained that code from Google, simply paste it in the
 Registration box and click the 'Register code' button to write it.
 Then you may be able to use Google Maps services. <br/><br/>";
 

@@ -1,7 +1,7 @@
 <?php
 /*
  *********************************************************************************************************
- * daloRADIUS - RADIUS Web Platform
+ * BB-RAD - RADIUS Web Platform
  * Copyright (C) 2007 - Liran Tal <liran@enginx.com> All Rights Reserved.
  *
  * This program is free software; you can redistribute it and/or
@@ -67,7 +67,7 @@ function userDisable($username, $divContainer) {
 		$user = $dbSocket->escapeSimple($value);		// clean username argument from harmful code
 
 		$sql = "INSERT IGNORE INTO ".$configValues['CONFIG_DB_TBL_RADUSERGROUP']." (Username,Groupname,Priority) ".
-				" VALUES ('$user','daloRADIUS-Disabled-Users',0) ";		
+				" VALUES ('$user','BB-RAD-Disabled-Users',0) ";		
 		$res = $dbSocket->query($sql);
 	
 	}
@@ -101,7 +101,7 @@ function userEnable($username, $divContainer) {
 		$user = $dbSocket->escapeSimple($value);		// clean username argument from harmful code
 		if ($user) {
 	        $sql = "DELETE FROM ".$configValues['CONFIG_DB_TBL_RADUSERGROUP'].
-	                " WHERE username='$user' AND groupname='daloRADIUS-Disabled-Users'";
+	                " WHERE username='$user' AND groupname='BB-RAD-Disabled-Users'";
 	        $res = $dbSocket->query($sql);
 		}
 	}
@@ -127,13 +127,13 @@ function checkDisabled($username) {
 	$username = $dbSocket->escapeSimple($username);
 
         $sql = "SELECT Username FROM ".$configValues['CONFIG_DB_TBL_RADUSERGROUP'].
-			" WHERE Username='$username' AND Groupname='daloRADIUS-Disabled-Users'";
+			" WHERE Username='$username' AND Groupname='BB-RAD-Disabled-Users'";
 	$res = $dbSocket->query($sql);
 	if ($numrows = $res->numRows() >= 1) {
 	
 	        echo "<div class='failure'>
 	              	Please note, the user <b>$username</b> is currently disabled.<br/>
-					To enable the user, remove the user from the daloRADIUS-Disabled-Users profile <br/>
+					To enable the user, remove the user from the BB-RAD-Disabled-Users profile <br/>
 	              </div>";
 
 	}
@@ -217,7 +217,7 @@ function userRefillSessionTime($username, $divContainer) {
 			" creationdate,creationby".
 			")".
 			" VALUES ".
-			" (0,'$user','".$row['planName']."','".$row['planTimeRefillCost']."','Refill Session Time','daloRADIUS Web Interface','Refill Session Time','".
+			" (0,'$user','".$row['planName']."','".$row['planTimeRefillCost']."','Refill Session Time','BB-RAD Web Interface','Refill Session Time','".
 				$row['paymentmethod']."','".$row['cash']."','".$row['creditcardname']."','".
 				$row['creditcardnumber']."','".$row['creditcardverification']."','".$row['creditcardtype']."','".$row['creditcardexp']."',".
 				"'$currDate', '$currBy'".
@@ -325,7 +325,7 @@ function userRefillSessionTraffic($username, $divContainer) {
                         " creationdate,creationby".
                         ")".
                         " VALUES ".
-                        " (0,'$user','".$row['planName']."','".$row['planTrafficRefillCost']."','Refill Session Traffic','daloRADIUS Web Interface','Refill Session Traffic','".
+                        " (0,'$user','".$row['planName']."','".$row['planTrafficRefillCost']."','Refill Session Traffic','BB-RAD Web Interface','Refill Session Traffic','".
                                 $row['paymentmethod']."','".$row['cash']."','".$row['creditcardname']."','".
                                 $row['creditcardnumber']."','".$row['creditcardverification']."','".$row['creditcardtype']."','".$row['creditcardexp']."',".
                                 "'$currDate', '$currBy'".
