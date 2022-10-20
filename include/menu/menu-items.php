@@ -8,15 +8,7 @@
 								<span id="sep">
 									&nbsp;
 								</span>
-
-                                <form action="mng-search.php">
-									<input name="username"
-										value=""
-										placeholder="<?php echo t('button','SearchUsers') ?>"
-										title="<?php echo t('Tooltip','Username') . '. ' . t('Tooltip','UsernameWildcard'); ?>"
-									/>
-                                </form>
-																
+						
 								<span id="sep">
 									&nbsp;
 								</span>
