@@ -1,14 +1,10 @@
 # About
 
-BB-RAD (http://www.daloradius.com) is an advanced RADIUS web management application aimed at managing hotspots and
-general-purpose ISP deployments.
+BB-RAD a RADIUS web management application for general-purpose ISP deployments.
 
-BB-RAD is written in PHP and JavaScript and utilizes a database abstraction
-layer which means that it supports many database systems, among them the popular
-MySQL, PostgreSQL, Sqlite, MsSQL, and many others.
+BB-RAD is written in PHP and JavaScript.
 
 It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a database server serving as the backend.
-
 
 
 # Features
@@ -18,8 +14,6 @@ It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a databa
 
     * List Users
     * Create New User
-    * Create New User - Quick add
-      easy to use for POS or HotSpot shops
     * Edit User
     * Search User
     * Delete User
@@ -33,12 +27,9 @@ It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a databa
     * Delete NAS
 
 
-## Groups Management
+## Package Management
 
-    * List, Create New, Edit and Delete User-Groups Mapping
-      usergroup table in radius database
-    * List, Create New, Edit and Delete Group-Reply and Group-Check Settings
-      radgroupreply and radgroupcheck tables in radius database for managing group-wide attributes
+    * List, Create New, Edit and Delete Speed Packages
 
 
 ## Accounting
@@ -50,10 +41,8 @@ It is based on a FreeRADIUS (http://www.freeradius.org) deployment with a databa
     * Date (From/To)
     * Display of All Accounting records
       the entire content of the radacct table in the radius database
-    * Display of Active Accounting records
-      performed by an algorithm implemented by BB-RAD itself to calculate if
-      an account has expired or not based on it's Max-All-Session attribute or Expiration attribute
-	* Custom Accounting Query
+    * Display of Active Accounting
+    * Custom Accounting Query
 
 
 ## Reporting
@@ -120,8 +109,6 @@ Provides visual graphs and statistical listing for the entire server, all-time i
       Database connection information (storage: mysql, postgresql and others),
       credentials (username and password), radius database tables names (radcheck, radacct, etc),
       and database password encryption type (none, md5, sha1)
-    * Language Settings
-      BB-RAD is multi-lingual and supports currently English and Russian language packs
     * Logging Settings and Debugging
       Logging of different actions, queries and page visiting performed on different pages.
       Also supports debugging of SQL queries executed.
