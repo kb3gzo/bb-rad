@@ -19,12 +19,12 @@ function updateErrorHandler($err) {
 */
 }
 
-/* check if the configuration parameter DALORADIUS_VERSION was set. This is later on used to automatically display
+/* check if the configuration parameter BB_RAD_VERSION was set. This is later on used to automatically display
   * the user with the auto-detected BB-RAD version. Otherwise an error message is displayed, asking the user to enter
   * the  BB-RAD version that is currently installed.
   */
-if (!isset($configValues['DALORADIUS_VERSION'])) {
-	$failureMsg .= "Couldn't find the configuration variable DALORADIUS_VERSION defined in <b>daloradius.conf.php</b><br/>";
+if (!isset($configValues['BB_RAD_VERSION'])) {
+	$failureMsg .= "Couldn't find the configuration variable BB_RAD_VERSION defined in <b>daloradius.conf.php</b><br/>";
 	$missingVersion = "Failed detetion of BB-RAD Version. Choose from the list";
 }
 
@@ -969,8 +969,8 @@ if (isset($_POST['submit'])) {
 		if (!isset($configValues['FREERADIUS_VERSION']))
 			$configValues['FREERADIUS_VERSION'] = '1';
 
-		if (!isset($configValues['DALORADIUS_VERSION']))
-			$configValues['DALORADIUS_VERSION'] = '0.9-8';
+		if (!isset($configValues['BB_RAD_VERSION']))
+			$configValues['BB_RAD_VERSION'] = '0.9-8';
 
 		/* Ending configuration parameters upgrade */
 
@@ -1633,7 +1633,7 @@ if (isset($_POST['submit'])) {
 
 		/* We continue to also upgrade the configuration parameters for 0.9-8 */
 		
-		$configValues['DALORADIUS_VERSION'] = '0.9-9';
+		$configValues['BB_RAD_VERSION'] = '0.9-9';
 		
 		$configValues['CONFIG_DB_TBL_RADUSERGROUP'] = 'radusergroup';
 		$configValues['CONFIG_DB_TBL_RADHG'] = 'radhuntgroup';
@@ -1677,7 +1677,7 @@ if (isset($_POST['submit'])) {
 	   file created and so we need to create one... */
 
 	if (!file_exists("library/daloradius.conf.php")) {
-		$configValues['DALORADIUS_VERSION'] = '0.9-9';
+		$configValues['BB_RAD_VERSION'] = '0.9-9';
 		$configValues['FREERADIUS_VERSION'] = '2';
 		$configValues['CONFIG_DB_ENGINE'] = 'mysql';
 		$configValues['CONFIG_DB_HOST'] = 'localhost';
@@ -1750,7 +1750,7 @@ if (isset($_POST['submit'])) {
 	}
 
 	
-	$configValues['DALORADIUS_VERSION'] = $databaseVersion;		// after finishing with upgrade, update the BB-RAD version parameter in library/daloradius.conf.php
+	$configValues['BB_RAD_VERSION'] = $databaseVersion;		// after finishing with upgrade, update the BB-RAD version parameter in library/daloradius.conf.php
 	include ("library/config_write.php");						// save the new database version for BB-RAD in the config file.
 
 	$updateStatus = "true";
@@ -1919,13 +1919,13 @@ if (isset($_POST['submit'])) {
 			$option = "<option value=\"\">Please select</option>";
 			echo $missingVersion;
 		} else {
-			$option = "<option value=\"".$configValues['DALORADIUS_VERSION']."\">".$configValues['DALORADIUS_VERSION']."</option>";
+			$option = "<option value=\"".$configValues['BB_RAD_VERSION']."\">".$configValues['BB_RAD_VERSION']."</option>";
 			echo "Successfully detected your BB-RAD version as";
 		}
 		*/
 
 		/* I have "broken" the auto-detect function just for the 0.9-8 release, because this is the first time we introduce
-		   the DALORADIUS_VERSION parameter and it might cause confusion with the auto-detect, so for now I am specifically
+		   the BB_RAD_VERSION parameter and it might cause confusion with the auto-detect, so for now I am specifically
 		   asking the user to choose his daloradius version (where 0.9-8 is not an option since it's the NEW version) */
 
 		$option = "<option value=\"\">Please select</option>";
