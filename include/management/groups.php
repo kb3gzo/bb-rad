@@ -33,7 +33,7 @@
                 <h302> <?php echo $groupTerminology ?> Assignment </h302>
 		<br/>
 
-	        <h301> Associated <?php echo $groupTerminology ?>s </h301>
+	        <h301> Associated Speed Package </h301>
 	        <br/>
 
 		<ul>
@@ -55,22 +55,13 @@
 			echo "
 
 				<li class='fieldset'>
-				<label for='group' class='form'>".t('all')[$groupTerminology]." #".($counter+1)."</label>
+				<label for='group' class='form'>".t('all')[$groupTerminology]."</label>
 				<select name='groups[]' id='usergroup$counter' tabindex=105 class='form' >
 					<option value='$row[0]'>$row[0]</option>
 					<option value=''></option>
 					".$groupOptions."
 				</select>
 
-				<br/>
-				<label for='groupPriority' class='form'>".t('all')[$groupTerminologyPriority]."</label>
-				<input class='integer' value='$row[1]' name='groups_priority[]' id='group_priority$counter' >
-				<img src=\"images/icons/bullet_arrow_up.png\" alt=\"+\" 
-					onclick=\"javascript:changeInteger('group_priority$counter','increment')\" />
-				<img src=\"images/icons/bullet_arrow_down.png\" alt=\"-\" 
-					onclick=\"javascript:changeInteger('group_priority$counter','decrement')\"/>
-
-				<br/>
 				</li>
 			";
 

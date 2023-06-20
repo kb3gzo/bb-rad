@@ -136,7 +136,7 @@ $l['all']['Password'] = "Password";
 $l['all']['PasswordType'] = "Password Type";
 $l['all']['IPAddress'] = "IP Address";
 $l['all']['Profile'] = "Speed Package";
-$l['all']['Group'] = "Group";
+$l['all']['Group'] = "Speed Package";
 $l['all']['Groupname'] = "Groupname";
 $l['all']['ProfilePriority'] = "Package Priority";
 $l['all']['GroupPriority'] = "Group Priority";
@@ -325,13 +325,13 @@ $l['Tooltip']['UserEdit'] = "Edit User";
 $l['Tooltip']['HotspotEdit'] = "Edit Hotspot";
 $l['Tooltip']['EditNAS'] = "Edit NAS";
 $l['Tooltip']['RemoveNAS'] = "Remove NAS";
-$l['Tooltip']['EditUserGroup'] = "Edit User Group";
-$l['Tooltip']['ListUserGroups'] = "List User Groups";
-$l['Tooltip']['DeleteUserGroup'] = "Delete User Group Association";
+$l['Tooltip']['EditUserGroup'] = "Edit User Speed Package";
+$l['Tooltip']['ListUserGroups'] = "List User Speed Package";
+$l['Tooltip']['DeleteUserGroup'] = "Delete User Speed Package Association";
 
 $l['Tooltip']['EditProfile'] = "Edit Package";
 
-$l['Tooltip']['EditGroup'] = "Edit Group";
+$l['Tooltip']['EditGroup'] = "Edit Speed Package";
 
 $l['FormField']['mngradgroupcheck.php']['ToolTip']['Value'] = "If you specify value then only the single record that matches both the groupname and the specific value which you have specified will be removed. If you omit the value then all records for that particular groupname will be removed!";
 
@@ -635,7 +635,7 @@ $l['title']['HGInfo'] = "HG Info";
 $l['title']['UserInfo'] = "User Info";
 $l['title']['BillingInfo'] = "Billing Info";
 
-$l['title']['Attributes'] = "Attributes";
+$l['title']['Attributes'] = "Add Attributes";
 $l['title']['ProfileAttributes'] = "Package Attributes";
 
 $l['title']['HotspotInfo'] = "Hotspot Info";
@@ -646,7 +646,7 @@ $l['title']['ContactInfo'] = "Contact Info";
 $l['title']['Plan'] = "Plan";
 
 $l['title']['Profile'] = "Package";
-$l['title']['Groups'] = "Groups";
+$l['title']['Groups'] = "Speed Package";
 $l['title']['RADIUSCheck'] = "Check Attributes";
 $l['title']['RADIUSReply'] = "Reply Attributes";
 
@@ -900,7 +900,7 @@ $l['Intro']['mngradprofilesdel.php'] = "Delete Package";
 $l['Intro']['mngradprofileslist.php'] = "List Packages";
 $l['Intro']['mngradprofilesnew.php'] = "New Packages";
 
-$l['Intro']['mngradgroups.php'] = "Groups Configuration";
+$l['Intro']['mngradgroups.php'] = "Speed Package Configuration";
 
 $l['Intro']['mngradgroupreplynew.php'] = "New Group Reply Mapping";
 $l['Intro']['mngradgroupreplylist.php'] = "Group Reply Mapping in Database";
@@ -1052,7 +1052,7 @@ $l['helpPage']['mngradprofilesnew'] = "
 ";
 
 $l['helpPage']['mngradgroups'] = "
-<b>Groups Management</b> - Manage Group Reply and Group Check mappings (radgroupreply/radgroupcheck tables).<br/>
+<b>Speed Package Management</b> - Manage Group Reply and Group Check mappings (radgroupreply/radgroupcheck tables).<br/>
 <h200><b>List Group Reply/Check </b></h200> - List Group Reply/Check Mappings<br/>
 <h200><b>Search Group Reply/Check </b></h200> - Search a Group Reply/Check Mapping (you may use wildcards) <br/>
 <h200><b>New Group Reply/Check </b></h200> - Add a Group Reply/Check Mapping <br/>
@@ -1505,7 +1505,7 @@ $l['messages']['noReplyAttributesForUser'] = "This user has no reply attributes 
 $l['messages']['noCheckAttributesForGroup'] = "This group has no check attributes associated with it";
 $l['messages']['noReplyAttributesForGroup'] = "This group has no reply attributes associated with it";
 
-$l['messages']['nogroupdefinedforuser'] = "This user has no Groups associated with it";
+$l['messages']['nogroupdefinedforuser'] = "This user has no Speed Package associated with it";
 $l['messages']['wouldyouliketocreategroup'] = "Would you like to create one?";
 
 
