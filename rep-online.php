@@ -180,7 +180,6 @@
 
 		<th scope='col'>
 		<a title='Sort' class='novisit' href=\"" . $_SERVER['PHP_SELF'] . "?usernameOnline=$usernameOnline&orderBy=NASshortname&orderType=$orderTypeNextPage\">
-			".t('all','HotSpot')." / 
 			".t('all','NasShortname')."
 		</th>
 
@@ -199,7 +198,6 @@
 		$start = $row['AcctStartTime'];
 		$nasip = $row['NASIPAddress'];
 		$nasmac = $row['CalledStationId'];
-		$hotspot = $row['hotspot'];
 		$nasshortname = $row['NASshortname'];
 		$acctsessionid = $row['AcctSessionId'];
 		$name = $row['Firstname'] . " " . $row['Lastname'];
@@ -227,7 +225,7 @@
 				<td> IP: $ip<br/>MAC: $usermac</td>
 				<td> $start </td>
 				<td> $totalTime </td>
-				<td> $hotspot $nasshortname </td>
+				<td> $nasshortname </td>
 				<td> ".t('all','Upload').": $upload <br/> ".t('all','Download').": $download <br/> ".t('all','TotalTraffic').": <b>$traffic</b> </td>
 		</tr>";
 	}

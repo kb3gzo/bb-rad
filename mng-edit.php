@@ -888,6 +888,100 @@ function enableUser() {
 		</fieldset>
 	</div>
 
+	<div class='tabbertab' title='<?php echo t('title','RADIUSReply')?>' >
+
+	<fieldset>
+
+		<h302> <?php echo t('title','RADIUSReply'); ?> </h302>
+		<br/>
+
+		<ul>
+
+<?php
+
+	$sql = "SELECT ".$configValues['CONFIG_DB_TBL_RADREPLY'].".Attribute, ".
+		$configValues['CONFIG_DB_TBL_RADREPLY'].".op, ".$configValues['CONFIG_DB_TBL_RADREPLY'].".Value, ".
+		$configValues['CONFIG_DB_TBL_DALODICTIONARY'].".Type, ".
+		$configValues['CONFIG_DB_TBL_DALODICTIONARY'].".RecommendedTooltip, ".
+		$configValues['CONFIG_DB_TBL_RADREPLY'].".id ".
+		" FROM ".
+		$configValues['CONFIG_DB_TBL_RADREPLY']." LEFT JOIN ".$configValues['CONFIG_DB_TBL_DALODICTIONARY'].
+		" ON ".$configValues['CONFIG_DB_TBL_RADREPLY'].".Attribute=".
+		$configValues['CONFIG_DB_TBL_DALODICTIONARY'].".attribute ".
+                " AND ".$configValues['CONFIG_DB_TBL_DALODICTIONARY'].".Value IS NULL ".
+		" WHERE ".
+		$configValues['CONFIG_DB_TBL_RADREPLY'].".UserName='".$dbSocket->escapeSimple($username)."'";
+
+
+	$res = $dbSocket->query($sql);
+	$logDebugSQL .= $sql . "\n";
+
+	if ($numrows = $res->numRows() == 0) {
+		echo "<center>";
+		echo t('messages','noReplyAttributesForUser');
+		echo "</center>";
+	}
+
+	while($row = $res->fetchRow()) {
+
+		echo "<label class='attributes'>";
+		echo "<a class='tablenovisit' href='mng-del.php?username=$username&attribute=$row[5]__$row[0]&tablename=radreply'>
+				<img src='images/icons/delete.png' border=0 alt='Remove' /> </a>";
+		echo "</label>";
+                echo "<label for='attribute' class='attributes'>&nbsp;&nbsp;&nbsp;$row[0]</label>";
+
+		echo "<input type='hidden' name='editValues".$editCounter."[]' value='$row[5]__$row[0]' />";
+
+		if ( ($configValues['CONFIG_IFACE_PASSWORD_HIDDEN'] == "yes") and (preg_match("/.*-Password/", $row[0])) ) {
+			echo "<input type='password' value='$row[2]' name='editValues".$editCounter."[]'  style='width: 115px' />";
+			echo "&nbsp;";
+			echo "<select name='editValues".$editCounter."[]' style='width: 45px' class='form'>";
+			echo "<option value='$row[1]'>$row[1]</option>";
+			drawOptions();
+			echo "</select>";
+		} else {
+			echo "<input value='$row[2]' name='editValues".$editCounter."[]' style='width: 115px' />";
+			echo "&nbsp;";
+			echo "<select name='editValues".$editCounter."[]' style='width: 45px' class='form'>";
+			echo "<option value='$row[1]'>$row[1]</option>";
+			drawOptions();
+			echo "</select>";
+		}
+
+		echo "<input type='hidden' name='editValues".$editCounter."[]' value='radreply' style='width: 90px'>";
+		$editCounter++;			// we increment the counter for the html elements of the edit attributes
+
+		if (!$row[3])
+			$row[3] = "unavailable";
+		if (!$row[4])
+			$row[4] = "unavailable";
+
+		printq("
+			<img src='images/icons/comment.png' alt='Tip' border='0' onClick=\"javascript:toggleShowDiv('$row[0]Tooltip')\" />
+			<br/>
+	                <div id='$row[0]Tooltip'  style='display:none;visibility:visible' class='ToolTip2'>
+	                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<i><b>Type:</b> $row[3]</i><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<i><b>Tooltip Description:</b> $row[4]</i><br/>
+				<br/>
+	                </div>
+		");
+
+	}
+
+?>
+        <br/><br/>
+        <hr><br/>
+
+        <br/>
+        <input type='submit' name='submit' value='<?php echo t('buttons','apply')?>' class='button' />
+        <br/>
+
+	</ul>
+
+        </fieldset>
+    </div>
 
 <?php
     include 'library/closedb.php';

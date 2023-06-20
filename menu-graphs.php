@@ -31,66 +31,6 @@
 
 	<h2>Graphs</h2>
 
-	<h3>User Graph</h3>
-	<ul class="subnav">
-
-		<li><a href="javascript:document.overall_logins.submit();"><b>&raquo;</b>
-			<img src='images/icons/graphsGeneral.gif' border='0'>
-			<?php echo t('button','UserLogins') ?></a>
-			<form name="overall_logins" action="graphs-overall_logins.php" method="post" class="sidebar">
-			<input name="username" type="text" id="usernameLogins" <?php if ($autoComplete) echo "autocomplete='off'"; ?>
-                                tooltipText='<?php echo t('Tooltip','Username'); ?> <br/>'
-				value="<?php if (isset($overall_logins_username)) echo $overall_logins_username; ?>">
-			<select class="generic" name="type" type="text">
-				<option value="daily"> <?php echo t('all','Daily') ?>
-				<option value="monthly"> <?php echo t('all','Monthly') ?>
-				<option value="yearly"> <?php echo t('all','Yearly') ?>
-			</select>
-			</form>
-		</li>
-
-
-		<li><a href="javascript:document.overall_download.submit();"><b>&raquo;</b>
-			<img src='images/icons/graphsGeneral.gif' border='0'>
-			<?php echo t('button','UserDownloads') ?></a>
-			<form name="overall_download" action="graphs-overall_download.php" method="post" class="sidebar">
-			<input name="username" type="text" id="usernameDownloads" <?php if ($autoComplete) echo "autocomplete='off'"; ?>
-                                tooltipText='<?php echo t('Tooltip','Username'); ?> <br/>'
-				value="<?php if (isset($overall_download_username)) echo $overall_download_username; ?>">
-			<select class="generic" name="type" type="text">
-				<option value="daily"> <?php echo t('all','Daily') ?>
-				<option value="monthly"> <?php echo t('all','Monthly') ?>
-				<option value="yearly"> <?php echo t('all','Yearly') ?>
-			</select>
-			<select class="generic" name="size" type="text">
-				<option value="megabytes"> <?php echo t('all','Megabytes') ?>
-				<option value="gigabytes"> <?php echo t('all','Gigabytes') ?>
-			</select>
-			</form>
-		</li>
-
-
-		<li><a href="javascript:document.overall_upload.submit();"><b>&raquo;</b>
-			<img src='images/icons/graphsGeneral.gif' border='0'>
-			<?php echo t('button','UserUploads') ?></a>
-			<form name="overall_upload" action="graphs-overall_upload.php" method="post" class="sidebar">
-			<input name="username" type="text" id="usernameUploads" <?php if ($autoComplete) echo "autocomplete='off'"; ?>
-                                tooltipText='<?php echo t('Tooltip','Username'); ?> <br/>'
-				value="<?php if (isset($overall_upload_username)) echo $overall_upload_username; ?>">
-			<select class="generic" name="type" type="text">
-				<option value="daily"> <?php echo t('all','Daily') ?>
-				<option value="monthly"> <?php echo t('all','Monthly') ?>
-				<option value="yearly"> <?php echo t('all','Yearly') ?>
-			</select>
-			<select class="generic" name="size" type="text">
-				<option value="megabytes"> <?php echo t('all','Megabytes') ?>
-				<option value="gigabytes"> <?php echo t('all','Gigabytes') ?>
-			</select>
-			</form>
-		</li>
-
-	</ul>
-
 	<h3>Statistics</h3>
 	<ul class="subnav">
 
